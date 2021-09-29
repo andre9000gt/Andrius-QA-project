@@ -210,6 +210,24 @@ public class FirstTestSuite {
         WebElement datTable = driver.findElement(By.cssSelector("#content > ul > li:nth-child(41) > a"));
         datTable.click();
 
+        WebElement lastName = driver.findElement(By.xpath("//*[@id=\"table1\"]/thead/tr/th[1]"));
+        lastName.click();
+
+        WebElement firstName = driver.findElement(By.xpath("//*[@id=\"table1\"]/thead/tr/th[2]"));
+        firstName.click();
+
+        WebElement due = driver.findElement(By.xpath("//*[@id=\"table1\"]/thead/tr/th[4]"));
+        due.click();
+
+        WebElement lastName2 = driver.findElement(By.xpath("//*[@id=\"table2\"]/thead/tr/th[1]"));
+        lastName2.click();
+
+        WebElement firstName2 = driver.findElement(By.xpath("//*[@id=\"table2\"]/thead/tr/th[2]"));
+        firstName2.click();
+
+        WebElement due2 = driver.findElement(By.xpath("//*[@id=\"table2\"]/thead/tr/th[4]"));
+        due2.click();
+        
         driver.close();
     }
 }
